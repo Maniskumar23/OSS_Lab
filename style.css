@@ -96,3 +96,54 @@ body {
     text-decoration: none;
     background-color:#1313;
   }
+  footer{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    height: auto;
+    width: 100vw;
+    padding: 40px 0 0 0;
+    
+  }
+  /*content*/
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   
+  }
+  .footer p{
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+      color: #c8dcd9;
+      
+  }
+  /*social -media*/
+  .socials{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+      margin: 0 10px;
+  }
+  .socials a{
+      text-decoration: none;
+      color: #fff;
+      border: 1.1px solid white;
+      padding: 5px;
+      border-radius: 50%;
+  }
+  .socials a i{
+      font-size: 1.1rem;
+      width: 20px;
+      transition: color .4s ease;
+  }
+  .socials a:hover i{
+      color: dodgerblue;
+  }
