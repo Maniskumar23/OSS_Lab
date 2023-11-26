@@ -4,11 +4,13 @@ const navigation =document.querySelector(".navigation");
 menuBtn.addEventListener("click",()=>{
     menuBtn.classList.toggle("active");
     navigation.classList.toggle("active");
-})
+});
 
 const btns =document.querySelectorAll(".nav-btn");
 const slides =document.querySelectorAll(".img-slide");
 const contents = document.querySelectorAll(".content");
+
+let currentSlideIndex=0;
 
 var sliderNav =function(manual){
     btns.forEach((btn) => {
@@ -33,3 +35,9 @@ var sliderNav =function(manual){
             sliderNav(i)
         });
     });
+function autoSlide() {
+    currentSlideIndex = (currentSlideIndex+1)% btns.length;
+    sliderNav(currentSlideIndex);
+}
+const interval = setInterval(autoSlide,4000);
+    
